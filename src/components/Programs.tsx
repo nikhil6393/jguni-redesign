@@ -45,6 +45,7 @@ const ProgramCard = ({ cat, i }: { cat: any; i: number }) => {
           alt={cat.title} 
           fill 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={i < 2}
           className="object-cover opacity-20 grayscale group-hover:grayscale-0 group-hover:opacity-30 transition-all" 
         />
       </div>
@@ -91,7 +92,7 @@ const Programs = () => {
       description: "Cultivating innovative leaders and strategic entrepreneurs.",
       icon: Briefcase,
       className: "md:col-span-1 md:row-span-1 bg-primary text-white",
-      image: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=600",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
     },
     {
       title: "School of Law",

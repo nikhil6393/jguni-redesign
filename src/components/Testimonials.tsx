@@ -93,17 +93,24 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Brand Bar */}
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="mt-32 flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700"
-        >
-          {['Google', 'Microsoft', 'Amazon', 'Meta', 'Deloitte', 'Apple'].map((brand) => (
-            <span key={brand} className="text-2xl font-black font-display tracking-tighter">{brand}</span>
-          ))}
-        </motion.div>
+        {/* Brand Bar / Alumni Placements */}
+        <div className="mt-32 border-t border-slate-200 dark:border-slate-800 pt-20">
+          <p className="text-center text-xs font-black uppercase tracking-[0.3em] text-muted-foreground mb-12">
+            Our Alumni Lead Innovation At
+          </p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700"
+          >
+            {['Google', 'Microsoft', 'Amazon', 'Meta', 'Deloitte', 'Apple'].map((brand) => (
+              <span key={brand} className="text-2xl md:text-3xl font-black font-display tracking-tighter hover:text-primary transition-colors cursor-default">
+                {brand}
+              </span>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );
