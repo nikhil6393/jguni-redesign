@@ -29,21 +29,11 @@
   --secondary: #D97706;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #020617;
-    --foreground: #f8fafc;
-    --color-card: #0f172a;
-    --color-card-foreground: #f8fafc;
-    --color-border: #1e293b;
-    --color-muted: #1e293b;
-    --color-muted-foreground: #94a3b8;
-  }
-}
-
+/* Dark mode disabled globally as requested */
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
   }
   
   body {
