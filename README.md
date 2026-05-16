@@ -4,6 +4,8 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-blueviolet?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
 
+**🚀 Live Demo:** [https://jg-university-demo.vercel.app](https://jg-university-demo.vercel.app)
+
 A premium, editorial-style digital experience for **JG University**, designed to elevate institutional branding through modern web aesthetics, sophisticated micro-interactions, and high-performance engineering.
 
 ---
