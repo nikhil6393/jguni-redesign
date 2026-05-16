@@ -9,14 +9,14 @@ import { cn } from "@/lib/utils";
 const CampusLife = () => {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=800",
       alt: "Campus Architecture",
       title: "Iconic Landmarks",
       span: "md:col-span-2 md:row-span-2",
       icon: MapPin,
     },
     {
-      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
+      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600",
       alt: "Student Collaboration",
       title: "Vibrant Hubs",
       span: "md:col-span-1 md:row-span-1",
