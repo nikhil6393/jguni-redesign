@@ -40,7 +40,6 @@ const About = () => {
                     src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800" 
                     alt="Campus Building" 
                     fill
-                    priority
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
