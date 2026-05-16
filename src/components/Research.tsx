@@ -144,7 +144,7 @@ const Research = () => {
           >
             <div className="relative aspect-video rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white">
               <Image 
-                src="https://images.unsplash.com/photo-1532187875605-18e88fe84165?auto=format&fit=crop&q=80&w=800" 
+                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800" 
                 alt="Research Lab" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
