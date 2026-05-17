@@ -40,6 +40,7 @@
     @apply antialiased selection:bg-primary/20 selection:text-primary font-sans;
     background: var(--background);
     color: var(--foreground);
+    overflow-x: clip;
   }
 
   /* Premium Scrollbar */

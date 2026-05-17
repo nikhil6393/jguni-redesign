@@ -57,7 +57,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card p-10 rounded-[2.5rem] relative flex flex-col justify-between border-white/40 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.1)] transition-all duration-500 group"
+              className="glass-card p-6 md:p-10 rounded-[2.5rem] relative flex flex-col justify-between border-white/40 shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.1)] transition-all duration-500 group"
             >
               <div className="absolute top-10 right-10 text-primary/10 group-hover:text-primary/20 transition-colors">
                 <Quote className="w-20 h-20" />

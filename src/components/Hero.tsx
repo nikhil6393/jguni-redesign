@@ -12,9 +12,12 @@ const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   
-  const { scrollY } = useScroll();
-  const yVisual = useTransform(scrollY, [0, 500], [0, 150]);
-  const opacityVisual = useTransform(scrollY, [0, 400], [1, 0]);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+  
+  const yVisual = useTransform(scrollYProgress, [0, 1], [0, 50]);
 
   // Animated gradient mesh background with "Light Beams"
   useEffect(() => {
@@ -100,7 +103,7 @@ const Hero = () => {
   };
 
   return (
-    <section ref={containerRef} className="relative min-h-[110vh] flex items-center pt-20 overflow-hidden">
+    <section ref={containerRef} className="relative min-h-[110vh] flex items-center pt-20">
       <canvas ref={canvasRef} className="absolute inset-0 -z-20 w-full h-full pointer-events-none" />
       
       {/* Dynamic Grid Background */}
@@ -168,7 +171,7 @@ const Hero = () => {
         {/* Right Visuals */}
         <div className="relative">
           <motion.div 
-            style={{ y: yVisual, opacity: opacityVisual }}
+            style={{ y: yVisual }}
             className="relative z-10 aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.4)] border-[12px] border-white dark:border-slate-800"
           >
             <Image
@@ -195,7 +198,7 @@ const Hero = () => {
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1, type: "spring" }}
-            className="absolute -right-8 top-20 z-20 glass-card p-6 rounded-2xl flex items-center gap-5 border-white/50 backdrop-blur-2xl"
+            className="hidden lg:flex absolute -right-8 top-20 z-20 glass-card p-6 rounded-2xl items-center gap-5 border-white/50 backdrop-blur-2xl"
           >
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
               <Users className="w-6 h-6" />
@@ -210,7 +213,7 @@ const Hero = () => {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 1.2, type: "spring" }}
-            className="absolute -left-12 bottom-20 z-20 glass-card p-6 rounded-2xl flex items-center gap-5 border-white/50 backdrop-blur-2xl"
+            className="hidden lg:flex absolute -left-12 bottom-20 z-20 glass-card p-6 rounded-2xl items-center gap-5 border-white/50 backdrop-blur-2xl"
           >
             <div className="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600">
               <Award className="w-6 h-6" />
@@ -225,7 +228,7 @@ const Hero = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 1.4, type: "spring" }}
-            className="absolute left-1/2 -translate-x-1/2 -bottom-10 z-20 glass-card px-8 py-5 rounded-2xl flex items-center gap-8 border-white/50 backdrop-blur-2xl"
+            className="hidden lg:flex absolute left-1/2 -translate-x-1/2 -bottom-10 z-20 glass-card px-8 py-5 rounded-2xl items-center gap-8 border-white/50 backdrop-blur-2xl"
           >
             <div className="flex -space-x-4">
               {[1, 2, 3].map((i) => (

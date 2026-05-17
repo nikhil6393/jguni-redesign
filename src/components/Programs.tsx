@@ -24,7 +24,7 @@ const ProgramCard = ({ cat, i }: { cat: any; i: number }) => {
       viewport={{ once: true }}
       onMouseMove={onMouseMove}
       className={cn(
-        "group relative rounded-[2.5rem] overflow-hidden p-10 flex flex-col justify-between min-h-[380px] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)]",
+        "group relative rounded-[2.5rem] overflow-hidden p-6 md:p-10 flex flex-col justify-between min-h-[380px] transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)]",
         cat.className
       )}
     >
@@ -85,35 +85,35 @@ const Programs = () => {
       description: "Leading the digital revolution with cutting-edge engineering and data science.",
       icon: Code,
       className: "md:col-span-2 md:row-span-2 bg-slate-950 text-white",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.pexels.com/photos/12379595/pexels-photo-12379595.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "School of Business",
       description: "Cultivating innovative leaders and strategic entrepreneurs.",
       icon: Briefcase,
       className: "md:col-span-1 md:row-span-1 bg-primary text-white",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.pexels.com/photos/7433844/pexels-photo-7433844.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "School of Law",
       description: "Advancing justice and legal expertise through academic pursuit.",
       icon: Scale,
       className: "md:col-span-1 md:row-span-1 bg-secondary text-white",
-      image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=600",
+      image: "https://images.pexels.com/photos/6077091/pexels-photo-6077091.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       title: "School of Design",
       description: "Exploring the boundaries of creativity and communication.",
       icon: Palette,
       className: "md:col-span-1 md:row-span-1 bg-slate-100 dark:bg-slate-900",
-      image: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&q=80&w=600",
+      image: "https://images.pexels.com/photos/6620994/pexels-photo-6620994.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       title: "School of Sciences",
       description: "Pioneering research in biological and physical sciences.",
       icon: Beaker,
       className: "md:col-span-1 md:row-span-1 bg-slate-100 dark:bg-slate-900",
-      image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=600",
+      image: "https://images.pexels.com/photos/8325761/pexels-photo-8325761.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
 

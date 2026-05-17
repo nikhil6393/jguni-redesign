@@ -37,7 +37,7 @@ const About = () => {
               <motion.div style={{ y: y1 }} className="space-y-6 lg:space-y-8 mt-12">
                 <div className="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
                   <Image 
-                    src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800" 
+                    src="https://images.pexels.com/photos/31085763/pexels-photo-31085763.jpeg?auto=compress&cs=tinysrgb&w=800" 
                     alt="Campus Building" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -47,7 +47,7 @@ const About = () => {
                 </div>
                 <div className="group relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
                   <Image 
-                    src="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?auto=format&fit=crop&q=80&w=600" 
+                    src="https://images.pexels.com/photos/17499783/pexels-photo-17499783.jpeg?auto=compress&cs=tinysrgb&w=600" 
                     alt="Library" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -59,7 +59,7 @@ const About = () => {
               <motion.div style={{ y: y2 }} className="space-y-6 lg:space-y-8">
                 <div className="group relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
                   <Image 
-                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" 
+                    src="https://images.pexels.com/photos/25643174/pexels-photo-25643174.jpeg?auto=compress&cs=tinysrgb&w=600" 
                     alt="Graduation" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -68,7 +68,7 @@ const About = () => {
                 </div>
                 <div className="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
                   <Image 
-                    src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=600" 
+                    src="https://images.pexels.com/photos/8197503/pexels-photo-8197503.jpeg?auto=compress&cs=tinysrgb&w=600" 
                     alt="Classroom" 
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
@@ -136,7 +136,7 @@ const About = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 p-10 rounded-[2.5rem] glass-card border-white/40">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 p-6 md:p-10 rounded-[2.5rem] glass-card border-white/40">
               {stats.map((stat, i) => (
                 <div key={i} className="text-center">
                   <div className={cn("text-3xl md:text-4xl font-black font-display mb-1", stat.color)}>

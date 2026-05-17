@@ -9,14 +9,14 @@ import { cn } from "@/lib/utils";
 const CampusLife = () => {
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
       alt: "Campus Architecture",
       title: "Iconic Landmarks",
       span: "md:col-span-2 md:row-span-2",
       icon: MapPin,
     },
     {
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=600",
+      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600",
       alt: "Student Collaboration",
       title: "Vibrant Hubs",
       span: "md:col-span-1 md:row-span-1",
@@ -30,14 +30,14 @@ const CampusLife = () => {
       icon: Coffee,
     },
     {
-      src: "https://images.unsplash.com/photo-1501503069356-3c6b82a17d89?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
       alt: "Cultural Events",
       title: "Cultural Life",
       span: "md:col-span-1 md:row-span-1",
       icon: Music,
     },
     {
-      src: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800",
+      src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=800",
       alt: "Sports",
       title: "Athletics",
       span: "md:col-span-1 md:row-span-1",
@@ -80,6 +80,7 @@ const CampusLife = () => {
               viewport={{ once: true }}
               className={cn(
                 "group relative rounded-[2.5rem] overflow-hidden cursor-pointer shadow-2xl",
+                i === 0 ? "h-[380px] md:h-auto" : "h-[260px] md:h-auto",
                 img.span
               )}
             >
