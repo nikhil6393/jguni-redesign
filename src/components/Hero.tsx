@@ -12,12 +12,15 @@ const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   
+  const imageRef = useRef<HTMLDivElement>(null);
+  
   const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"]
+    target: imageRef,
+    offset: ["start end", "end start"]
   });
   
-  const yVisual = useTransform(scrollYProgress, [0, 1], [0, 50]);
+  const yVisual = useTransform(scrollYProgress, [0, 1], [-50, 50]);
+  const opacityVisual = useTransform(scrollYProgress, [0.5, 1], [1, 0]);
 
   // Animated gradient mesh background with "Light Beams"
   useEffect(() => {
@@ -103,7 +106,7 @@ const Hero = () => {
   };
 
   return (
-    <section ref={containerRef} className="relative min-h-[110vh] flex items-center pt-20">
+    <section ref={containerRef} className="relative min-h-[110vh] flex items-center pt-20 overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 -z-20 w-full h-full pointer-events-none" />
       
       {/* Dynamic Grid Background */}
@@ -169,9 +172,9 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Visuals */}
-        <div className="relative">
+        <div className="relative" ref={imageRef}>
           <motion.div 
-            style={{ y: yVisual }}
+            style={{ y: yVisual, opacity: opacityVisual }}
             className="relative z-10 aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.4)] border-[12px] border-white dark:border-slate-800"
           >
             <Image
